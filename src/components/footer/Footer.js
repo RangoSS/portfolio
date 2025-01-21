@@ -13,10 +13,10 @@ const Footer = () => {
   <h5>Developer</h5>
   <p>Phathushedzo</p>
   <p className="developer-message">
-    "Crafting innovative solutions with passion and precision. As a Junior Developer, I am constantly learning and growing in the field of software development. I specialize in front-end technologies like React and JavaScript, and have a solid foundation in back-end development with Node.js and Express. I am eager to work on impactful projects, collaborate with experienced developers, and continue to refine my skills to create user-friendly, scalable applications."
+    Crafting innovative solutions with passion and precision. As a Junior Developer, I am constantly learning and growing in the field of software development. I specialize in front-end technologies like React and JavaScript, and have a solid foundation in back-end development with Node.js and Express. I am eager to work on impactful projects, collaborate with experienced developers, and continue to refine my skills to create user-friendly, scalable applications."
   </p>
   <p>
-    I am committed to delivering high-quality code while focusing on clean, maintainable practices. I enjoy tackling challenges, problem-solving, and constantly improving my knowledge of the latest web development technologies. Excited to grow in this ever-evolving industry, I seek opportunities to contribute to meaningful projects and make a positive impact through technology.
+    I am committed to delivering high-quality code while focusing on clean, maintainable practices. 
   </p>
 </Col>
           {/* Contact Info */}
