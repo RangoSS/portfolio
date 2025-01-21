@@ -1,0 +1,33 @@
+/* Ensure the page container takes up the full screen */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 80px; /* Adjust to account for the fixed navbar */
+  overflow: hidden;
+}
+
+/* Ensure each page takes up the full height available */
+.page {
+  flex: 1;
+  display: none; /* Default to hidden */
+  overflow-y: auto; /* Allows scrolling if content is taller than the container */
+}
+
+/* Show the active page */
+.page.slide-in {
+  display: block;
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Slide-in animation for page transition */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

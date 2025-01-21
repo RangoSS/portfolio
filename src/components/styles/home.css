@@ -1,0 +1,76 @@
+/* Styling for the home-container */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  /* Centering the content */
+  .intro-section {
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 3rem;
+    color: #007bff; /* Your desired color */
+  }
+  
+  .surname {
+    font-size: 1.5rem;
+    color: #343a40; /* Dark color for contrast */
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #6c757d; /* Light text color */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Buttons styling */
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  /* Styling the image */
+  .image-container {
+    margin-top: 20px;
+  }
+  
+  .computer-image {
+    width: 500px; /* Increased the image width */
+    height: auto; /* Keeps the aspect ratio intact */
+    animation: moveImage 5s ease-in-out infinite; /* Add movement animation */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .computer-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Animation for image */
+  @keyframes moveImage {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(20px) translateY(10px); /* Move right and down */
+    }
+    50% {
+      transform: translateX(0) translateY(0); /* Return to original position */
+    }
+    75% {
+      transform: translateX(-20px) translateY(-10px); /* Move left and up */
+    }
+    100% {
+      transform: translateX(0) translateY(0); /* Return to original position */
+    }
+  }
+  

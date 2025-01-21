@@ -1,0 +1,33 @@
+.footer-container {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px 0;
+  }
+  
+  .footer-container h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-container p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .footer-container .developer-message {
+    font-style: italic;
+    color: #495057;
+    margin-top: 5px;
+  }
+  
+  .footer-container .nav-link {
+    color: #007bff;
+  }
+  
+  .footer-container .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-container a {
+    color: #007bff;
+  }
+  
