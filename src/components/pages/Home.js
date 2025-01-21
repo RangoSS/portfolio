@@ -1,9 +1,21 @@
 import React from 'react';
-import { Button, Container } from 'react-bootstrap'; // Bootstrap components for buttons
+import { Button, Container } from 'react-bootstrap';
+
 import '../styles/home.css'; // Custom CSS for styling
 import Footer from '../footer/Footer';
 
 const Home = () => {
+
+  
+
+  const downloadResume = () => {
+    const resumeUrl = '/resume.pdf';  // Adjust path to where your resume is in the public folder
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'PhathuExpMlab.pdf';  // The name of the file that will be downloaded
+    link.click();
+  };
+
   return (
     <div>
       <div className="home-container">
@@ -19,14 +31,16 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="button-container">
-            <Button variant="primary" className="me-3">Contact Me</Button>
-            <Button variant="outline-primary">Download Resume</Button>
+            
+              
+            
+            <Button variant="outline-primary" onClick={downloadResume}>Download Resume</Button>
           </div>
 
           {/* Computer Image */}
           <div className="image-container">
             <img src="/computer1.jpg" alt="Computer" className="computer-image" />
-            {/* Background Image (dot2.png) */}
+            {/* Background Image (dot5.png) */}
             <div className="background-image-container">
               <img src="/dot5.png" alt="Dot" className="background-image" />
             </div>
