@@ -9,12 +9,13 @@ const Home = () => {
   
 
   const downloadResume = () => {
-    const resumeUrl = '/resume.pdf';  // Adjust path to where your resume is in the public folder
+    const resumeUrl = '/PhathuExpMlab.pdf'; // Path to the PDF file in the public folder
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'PhathuExpMlab.pdf';  // The name of the file that will be downloaded
+    link.download = 'PhathuExpMlab.pdf'; // Set the downloaded file's name
     link.click();
   };
+  
 
   return (
     <div>
