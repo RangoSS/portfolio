@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+portfolio link   https://portfolio-phathu.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Junior Developer Portfolio
+Welcome to my portfolio! This is a collection of projects I've built to showcase my skills and experience as a junior web developer. Below, you will find details on the various projects I've worked on, focusing on React, Redux, and front-end development.
 
-## Available Scripts
+Projects
+1. Task Planner App
+A task management web app built with React. This project allows users to:
 
-In the project directory, you can run:
+Register and log in with encrypted credentials.
+Add, edit, delete, and organize tasks by priority and status.
+Filter and sort tasks by various criteria.
+2. Weather App
+A weather app displaying real-time weather information such as temperature, humidity, and wind speed. Features include:
 
-### `npm start`
+Current weather and 7-day forecast.
+Search functionality for multiple locations.
+Customizable themes and unit options.
+Offline access with cached weather data and notifications for severe weather.
+3. Shopping List App
+A full-featured shopping list application with CRUD functionalities for managing shopping lists. Key features include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add, update, delete, and view shopping lists with categories, quantities, and item images.
+Search, sort, and filter items by name, category, and date.
+User authentication with protected routes and personal shopping list management using Redux.
+4. Recipe Manager App
+A recipe management app that allows users to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Add, view, edit, and delete recipes.
+Organize recipes by category (e.g., Breakfast, Lunch, Dinner).
+Upload recipe images and search by name or category.
+Secure user authentication and authorization with user-specific data.
+Technologies Used
+React for building interactive UIs.
+Redux Toolkit for state management.
+Bootstrap for responsive design and styling.
+React Router for navigation and routing.
+JSON Server for data persistence and API simulation.
+Bcrypt.js for encrypting passwords.
+Axios for making HTTP requests.
+Available Scripts
+In this project directory, you can run the following commands:
 
-### `npm test`
+npm start
+Runs the app in development mode. Open http://localhost:3000 to view it in the browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm test
+Launches the test runner in interactive watch mode.
 
-### `npm run build`
+npm run build
+Builds the app for production to the build folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run eject
+This command removes the single build dependency and provides full control over the configuration files.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Learning and Development
+This portfolio demonstrates my ability to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build responsive and user-friendly web applications using React and Redux.
+Implement authentication, state management, and CRUD operations.
+Manage data using JSON Server and perform operations with REST APIs.
+For more information on React, Redux, and related technologies, you can check out the official documentation for:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React
+Redux Toolkit

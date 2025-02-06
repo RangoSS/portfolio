@@ -35,7 +35,7 @@ const Home = () => {
             
               
             
-            <Button variant="outline-primary" onClick={downloadResume}>Download Resume</Button>
+            <Button variant="primary" size="lg" onClick={downloadResume}>Download Resume</Button>
           </div>
 
           {/* Computer Image */}
