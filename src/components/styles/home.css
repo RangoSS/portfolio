@@ -96,7 +96,19 @@
   width: 100%;
   height: auto;
 }
-
+.outer-image{
+  border: 1px solid red;
+  max-width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: auto; /* Centers within parent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  background-image: url('/public/dot4.png'); /* Path relative to the public folder */
+  background-size: cover; /* Ensures the image covers the element area */
+  background-position: center; /* Centers the image */
+}
 /* Animation for image movement */
 @keyframes moveImage {
   0% {

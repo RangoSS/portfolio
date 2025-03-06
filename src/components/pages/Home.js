@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="home-container">
+      <div className="home-container" style={{border:"1px solid green"}}>
         <Container className="text-center">
           {/* Name and Description */}
           <div className="intro-section">
@@ -37,7 +37,8 @@ const Home = () => {
             
             <Button variant="primary" size="lg" onClick={downloadResume}>Download Resume</Button>
           </div>
-
+            
+            <div className='outer-image'>
           {/* Computer Image */}
           <div className="image-container">
             <img src="/computer1.jpg" alt="Computer" className="computer-image" />
@@ -45,6 +46,7 @@ const Home = () => {
             <div className="background-image-container">
               <img src="/dot5.png" alt="Dot" className="background-image" />
             </div>
+          </div>
           </div>
         </Container>
       </div>

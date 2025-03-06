@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap'; // Import Bootstrap components
 import { FaFacebook, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'; // Add more social media icons from react-icons
-
+import "./../styles/Footer.css"
 // The Footer component
 const Footer = () => {
   return (
@@ -49,7 +49,7 @@ const Footer = () => {
         </Row>
 
         {/* Copyright and Additional Links */}
-        <Row className="text-center mt-4">
+        <Row className="text-center mt-4 bottom-footer">
           <Col>
             <p>&copy; {new Date().getFullYear()} Phathushedzo. All rights reserved.</p>
             <Nav className="justify-content-center">
