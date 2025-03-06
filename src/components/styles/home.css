@@ -108,7 +108,7 @@
   align-items: center;
   margin: auto;
   box-shadow: 0 4px 8px rgba(1, 0, 0, 0.2);
-  background-image: url('/public/dot4.png');
+  background-image: url('/public/hand.jpg');
   background-size: cover;
   background-position: center;
   position: relative; /* Important for positioning the message */
