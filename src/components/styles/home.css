@@ -4,42 +4,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Ensures content is centered vertically and horizontally */
+  flex-direction: column; 
   text-align: center;
-  background-color: #f8f9fa; /* Light background color */
-  padding: 0 20px; /* Padding for better spacing on small screens */
+  background-color: #f8f9fa; 
+  padding: 0 20px;
 }
 
 /* Centering the content */
 .intro-section {
-  margin-bottom: 30px; /* Increased margin for better separation */
+  margin-bottom: 30px;
 }
 
 .name {
   font-size: 3rem;
-  color: #007bff; /* Your desired color */
-  font-weight: bold; /* Emphasize the name */
+  color: #007bff;
+  font-weight: bold;
 }
 
 .surname {
   font-size: 1.5rem;
-  color: #343a40; /* Dark color for contrast */
-  font-weight: 500; /* Slightly lighter weight for surname */
+  color: #343a40;
+  font-weight: 500;
 }
 
 .description {
-  font-size: 1.1rem; /* Slightly larger font size */
-  color: #6c757d; /* Light text color */
-  max-width: 700px; /* Increased max-width for better readability */
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6; /* Increased line height for better readability */
+  line-height: 1.6;
 }
 
 /* Buttons styling */
 .button-container {
   margin-top: 30px;
   display: flex;
-  justify-content: center; /* Center the buttons */
+  justify-content: center;
 }
 
 .button-container button {
@@ -47,33 +47,34 @@
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background and scaling */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button-container button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* Styling the image */
 .image-container {
   margin-top: 30px;
-  position: relative; /* Make sure background is positioned relative to this container */
+  position: relative;
 }
 
 .computer-image {
   width: 100%;
-  max-width: 600px; /* Maximum width */
-  height: auto; /* Keeps the aspect ratio intact */
-  border-radius: 15px; /* Rounded corners for a sleek look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image */
-  animation: moveImage 5s ease-in-out infinite; /* Add movement animation */
-  transition: transform 0.3s ease; /* Smooth scaling effect */
-  z-index: 1; /* Ensure it stays on top of the background image */
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: moveImage 5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
 
+/* Zoom effect on hover */
 .computer-image:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Hidden background image that becomes visible during hover */
@@ -83,71 +84,85 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition when it becomes visible */
-  z-index: 0; /* Place it behind the computer image */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
 }
 
 .computer-image:hover + .background-image-container {
-  opacity: 1; /* Make the background image visible when the computer image is hovered */
+  opacity: 1;
 }
 
 .background-image {
   width: 100%;
   height: auto;
 }
-.outer-image{
-  border: 1px solid red;
-  max-width: 50%;
-  padding: 20px;
+
+/* Add outer image styling */
+.outer-image {
+  border: 1px;
+  min-width: 50%;
+  padding: 10px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin: auto; /* Centers within parent */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
-  background-image: url('/public/dot4.png'); /* Path relative to the public folder */
-  background-size: cover; /* Ensures the image covers the element area */
-  background-position: center; /* Centers the image */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.2);
+  background-image: url('/public/dot4.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Important for positioning the message */
+  overflow: hidden; /* Prevents overflow when zooming */
 }
+
+/* Hidden message that appears on hover */
+.message {
+  font-family: 'Roboto', sans-serif; /* Ensure this is applied */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #adb5bd !important;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Show message when hovering */
+.outer-image:hover .message {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Animation for image movement */
 @keyframes moveImage {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(20px) translateY(10px); /* Move right and down */
-  }
-  50% {
-    transform: translateX(0) translateY(0); /* Return to original position */
-  }
-  75% {
-    transform: translateX(-20px) translateY(-10px); /* Move left and up */
-  }
-  100% {
-    transform: translateX(0) translateY(0); /* Return to original position */
-  }
+  0% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(20px) translateY(10px); }
+  50% { transform: translateX(0) translateY(0); }
+  75% { transform: translateX(-20px) translateY(-10px); }
+  100% { transform: translateX(0) translateY(0); }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .name {
-    font-size: 2.5rem; /* Adjusted name font size for smaller screens */
+    font-size: 2.5rem;
   }
-
   .surname {
-    font-size: 1.2rem; /* Adjusted surname font size for smaller screens */
+    font-size: 1.2rem;
   }
-
   .description {
-    font-size: 1rem; /* Adjusted description font size for smaller screens */
-    max-width: 90%; /* Adjusted max-width for smaller screens */
+    font-size: 1rem;
+    max-width: 90%;
   }
-
   .computer-image {
-    max-width: 100%; /* Ensures the image is responsive on smaller screens */
+    max-width: 100%;
   }
-
   .button-container button {
-    padding: 8px 16px; /* Adjusted padding for smaller buttons on mobile */
+    padding: 8px 16px;
   }
 }

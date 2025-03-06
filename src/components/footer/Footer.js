@@ -5,7 +5,7 @@ import "./../styles/Footer.css"
 // The Footer component
 const Footer = () => {
   return (
-    <div className="footer-container" style={{ backgroundColor: '#343a40', padding: '40px 0', color: '#fff' }}>
+    <div className="footer-container" style={{ backgroundColor: '#343a40', padding: '40px 0', color: '#fff',border:'1px solid yellow' }}>
       <Container>
         <Row className="text-center">
           {/* Developer Info */}
@@ -30,22 +30,23 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <Col md={4} sm={12} className="footer-section">
-            <h5>Follow Me</h5>
-            <Nav className="justify-content-center">
-              <Nav.Link href="https://www.facebook.com/phathutshedzodanies.tshidaisa" target="_blank" style={{ textDecoration: 'none' }}>
-                <FaFacebook size={30} style={{ marginRight: '15px', color: '#fff', transition: 'color 0.3s' }} />
-              </Nav.Link>
-              <Nav.Link href="https://www.linkedin.com/in/phathutshedzo-tshidaisa-39b64969" target="_blank" style={{ textDecoration: 'none' }}>
-                <FaLinkedin size={30} style={{ marginRight: '15px', color: '#fff', transition: 'color 0.3s' }} />
-              </Nav.Link>
-              <Nav.Link href="https://github.com/RangoSS" target="_blank" style={{ textDecoration: 'none' }}>
-                <FaGithub size={30} style={{ marginRight: '15px', color: '#fff', transition: 'color 0.3s' }} />
-              </Nav.Link>
-              <Nav.Link href="https://twitter.com/phathutshedzo" target="_blank" style={{ textDecoration: 'none' }}>
-                <FaTwitter size={30} style={{ marginRight: '15px', color: '#fff', transition: 'color 0.3s' }} />
-              </Nav.Link>
-            </Nav>
-          </Col>
+  <h5>Follow Me</h5>
+  <Nav className="justify-content-center">
+    <Nav.Link href="https://www.facebook.com/phathutshedzodanies.tshidaisa" target="_blank" className="social-icon">
+      <FaFacebook size={30} />
+    </Nav.Link>
+    <Nav.Link href="https://www.linkedin.com/in/phathutshedzo-tshidaisa-39b64969" target="_blank" className="social-icon">
+      <FaLinkedin size={30} />
+    </Nav.Link>
+    <Nav.Link href="https://github.com/RangoSS" target="_blank" className="social-icon">
+      <FaGithub size={30} />
+    </Nav.Link>
+    <Nav.Link href="https://twitter.com/phathutshedzo" target="_blank" className="social-icon">
+      <FaTwitter size={30} />
+    </Nav.Link>
+  </Nav>
+</Col>
+
         </Row>
 
         {/* Copyright and Additional Links */}

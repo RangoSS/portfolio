@@ -1,13 +1,9 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
-
 import '../styles/home.css'; // Custom CSS for styling
 import Footer from '../footer/Footer';
 
 const Home = () => {
-
-  
-
   const downloadResume = () => {
     const resumeUrl = '/PhathuExpMlab.pdf'; // Path to the PDF file in the public folder
     const link = document.createElement('a');
@@ -15,11 +11,10 @@ const Home = () => {
     link.download = 'PhathuExpMlab.pdf'; // Set the downloaded file's name
     link.click();
   };
-  
 
   return (
     <div>
-      <div className="home-container" style={{border:"1px solid green"}}>
+      <div className="home-container">
         <Container className="text-center">
           {/* Name and Description */}
           <div className="intro-section">
@@ -32,21 +27,20 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="button-container">
-            
-              
-            
             <Button variant="primary" size="lg" onClick={downloadResume}>Download Resume</Button>
           </div>
-            
-            <div className='outer-image'>
-          {/* Computer Image */}
-          <div className="image-container">
-            <img src="/computer1.jpg" alt="Computer" className="computer-image" />
-            {/* Background Image (dot5.png) */}
-            <div className="background-image-container">
-              <img src="/dot5.png" alt="Dot" className="background-image" />
+
+          {/* Image with hover effect */}
+          <div className='outer-image'>
+            <div className="image-container">
+              <img src="/computer1.jpg" alt="Computer" className="computer-image" />
+              <div className="background-image-container">
+                <img src="/dot5.png" alt="Dot" className="background-image" />
+              </div>
+              <div className="message">
+              Code with passion, create with pride – that's the secret to success!" 💻🚀❤️
+              </div>
             </div>
-          </div>
           </div>
         </Container>
       </div>
