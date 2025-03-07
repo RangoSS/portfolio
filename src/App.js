@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Navbar, Container, Nav ,Badge } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 // Import your components
 import Home from './components/pages/Home';
@@ -22,7 +22,7 @@ function App() {
         {/* Navbar */}
         <Navbar expand="lg" className="bg-body-tertiary fixed-top navba-style">
           <Container>
-            <Navbar.Brand href="/">Phathu<Badge bg="success">.</Badge></Navbar.Brand>
+            <Navbar.Brand className='brand-log' href="/">Phathu<span className='brand-dots'>...</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

@@ -62,7 +62,7 @@
 }
 
 .computer-image {
-  width: 100%;
+  width: 80%;
   max-width: 600px;
   height: auto;
   border-radius: 15px;
@@ -70,6 +70,7 @@
   animation: moveImage 5s ease-in-out infinite;
   transition: transform 0.3s ease;
   z-index: 1;
+  opacity: 0.9;
 }
 
 /* Zoom effect on hover */

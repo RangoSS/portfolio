@@ -85,3 +85,10 @@
 .social-icon:hover {
   color: #00acee; /* You can change this to a different color on hover (e.g., light blue or Twitter-like color) */
 }
+
+.vertical-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}

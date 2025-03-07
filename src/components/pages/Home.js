@@ -26,7 +26,7 @@ const Home = () => {
           </div>
 
           {/* Buttons */}
-          <div className="button-container">
+          <div className="button-container mb-3">
             <Button variant="primary" size="lg" onClick={downloadResume}>Download Resume</Button>
           </div>
 

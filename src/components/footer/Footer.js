@@ -1,11 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap'; // Import Bootstrap components
 import { FaFacebook, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'; // Add more social media icons from react-icons
-import "./../styles/Footer.css"
+import "./../styles/Footer.css";
+
 // The Footer component
 const Footer = () => {
+   // Scroll to different sections when clicked on bottom links
+  
   return (
-    <div className="footer-container" style={{ backgroundColor: '#343a40', padding: '40px 0', color: '#fff',border:'1px solid yellow' }}>
+    <div className="footer-container" style={{ backgroundColor: '#343a40', padding: '40px 0', color: '#fff'}}>
       <Container>
         <Row className="text-center">
           {/* Developer Info */}
@@ -31,7 +34,7 @@ const Footer = () => {
           {/* Social Media Links */}
           <Col md={4} sm={12} className="footer-section">
   <h5>Follow Me</h5>
-  <Nav className="justify-content-center">
+  <Nav className="justify-content-center mb-5">
     <Nav.Link href="https://www.facebook.com/phathutshedzodanies.tshidaisa" target="_blank" className="social-icon">
       <FaFacebook size={30} />
     </Nav.Link>
@@ -45,6 +48,8 @@ const Footer = () => {
       <FaTwitter size={30} />
     </Nav.Link>
   </Nav>
+
+  
 </Col>
 
         </Row>
@@ -57,6 +62,8 @@ const Footer = () => {
               <Nav.Link href="/privacy-policy" style={{ color: '#f8f9fa', textDecoration: 'none', marginRight: '15px' }}>Privacy Policy</Nav.Link>
               <Nav.Link href="/terms-of-service" style={{ color: '#f8f9fa', textDecoration: 'none' }}>Terms of Service</Nav.Link>
             </Nav>
+            {/* Divider Line */}
+  
           </Col>
         </Row>
       </Container>
