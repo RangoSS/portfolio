@@ -83,11 +83,15 @@ const About = () => {
           <Col md={8}>
             <h2>Know Who I Am</h2>
             <p>
-              Hi everyone, I am <strong>Phathutshedzo</strong> from Venda, South Africa. I was
-              born and raised in Venda, but due to my school and job hunting, I am currently
-              residing in Pretoria. I have a passion for software development and have
-              pursued my qualifications in programming to build a strong career in the tech
-              industry.
+            My name is Phathutshedzo, and I have a deep passion for software development. I am dedicated to continuously improving my skills in both front-end and back-end development.
+
+In the realm of front-end, I am well-versed in technologies like React and React Native, which allow me to create dynamic, responsive user interfaces. On the back-end, I have experience with PHP and C#,Node, and I am proficient in working with databases and server-side technologies to build robust and scalable applications.
+
+I am also highly skilled in Bootstrap, enabling me to design sleek, mobile-first web pages that offer excellent user experiences. My love for technology extends beyond just programming—I am excited about the endless possibilities of artificial intelligence (AI) and how it can revolutionize the way we build and interact with software.
+
+With my combination of technical skills and passion for learning, I am committed to advancing my career in the tech industry and contributing to innovative projects that make a real impact.
+
+
             </p>
 
             <p>
